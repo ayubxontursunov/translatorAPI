@@ -110,34 +110,3 @@ def get_data(prefix: str):
             return {f"{words[0][2]}": f"{words[0][1]}"}
     else:
         raise HTTPException(status_code=404, detail="Translation not found in database")
-
-    # if prefix == uz_word:
-    #     print(f"Translated word to en: {en_word}")
-    #
-    #     if check_en:
-    #         print("Word already exists in the database.")
-    #         en_words = base.get_words_en(en_word)
-    #     else:
-    #         print("Word not found in the database, fetching translation.")
-    #         base.add_item(prefix, en_word)
-    #         en_words = base.get_words_en(en_word)
-    # elif prefix == en_word:
-    #     print(f"Translated word to uz: {uz_word}")
-    #
-    #     if check_uz:
-    #         print("Word already exists in the database.")
-    #         uz_words = base.get_words_uz(uz_word)
-    #         print("321", uz_words)
-    #     else:
-    #         print("Word not found in the database, fetching translation.")
-    #         base.add_item(uz_word, prefix)
-    #         uz_words = base.get_words_uz(uz_word)
-    #         print("123", uz_words)
-    #
-    # # print("----", words)
-    # if len(uz_words) != 0:
-    #     return {f"{uz_words[0][2]}": f"{uz_words[0][1]}"}
-    # elif len(en_words) != 0:
-    #     return {f"{en_words[0][1]}": f"{en_words[0][2]}"}
-    # else:
-    #     raise HTTPException(status_code=404, detail="Translation not found in database")
