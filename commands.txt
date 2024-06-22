@@ -1,0 +1,4 @@
+
+To run FastAPI: `fastapi dev main.py`
+
+To download necessary libraries: `pip install -r requirements.txt`
