@@ -7,7 +7,7 @@ This project utilizes FastAPI to provide a translation service between Uzbek (uz
 - **Translation Endpoints:**
   - `/uz_en/{prefix}`: Translates Uzbek words to English.
   - `/en_uz/{prefix}`: Translates English words to Uzbek.
-  - `/translate/{prefix}`: Auto-detects the language of the prefix and provides the corresponding translation.
+  - `/translate/{prefix}`: Auto-detects the language of the prefix and provides the corresponding translation between Uzbek and English languages.
 
 - **Database Integration:** Utilizes SQLite database (`dictionary.db`) to store translations and avoid redundant translation requests.
 
@@ -17,7 +17,7 @@ This project utilizes FastAPI to provide a translation service between Uzbek (uz
 
    ```bash
    git clone https://github.com/ayubxontursunov/translatorAPI.git
-   cd your-repo
+   cd translatorAPI
    
 2. Install dependencies:
     ```bash
